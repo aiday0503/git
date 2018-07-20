@@ -10,11 +10,17 @@
 
 #define BANNED(func) sorry_##func##_is_a_banned_function()
 
+#undef strcpy
 #define strcpy(x,y) BANNED(strcpy)
+
+#undef strncpy
 #define strncpy(x,y,n) BANNED(strncpy)
 
 #ifdef HAVE_VARIADIC_MACROS
+
+#undef sprintf
 #define sprintf(...) BANNED(sprintf)
+
 #endif
 
 #endif /* BANNED_H */
