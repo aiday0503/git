@@ -1247,4 +1247,6 @@ extern void unleak_memory(const void *ptr, size_t len);
 #define UNLEAK(var) do {} while (0)
 #endif
 
+#include "banned.h"
+
 #endif

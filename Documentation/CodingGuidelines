@@ -391,6 +391,9 @@ For C programs:
    must be declared with "extern" in header files. However, function
    declarations should not use "extern", as that is already the default.
 
+ - A few easy-to-misuse functions like `strcpy` are banned; see
+   `banned.h` for the complete list.
+
 For Perl programs:
 
  - Most of the C guidelines above apply.
